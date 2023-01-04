@@ -1,18 +1,18 @@
 
-// var points = 100;
+var points = 100;
 
-// function trueAns() {
-//     document.querySelector("#playerscore").innerHTML = "V";
-// }
+function trueAns() {
+    document.querySelector("#playerscore").innerHTML = "V";
+}
 
-// function falseAns() {
-//     document.querySelector("#test").innerHTML = "X";
-// }
+function falseAns() {
+    document.querySelector("#test").innerHTML = "X";
+}
 
-// function totalSum() {
-//     document.querySelector("#score")
-//     return points
-// }
+function totalSum() {
+    document.querySelector("#score")
+    return points
+}
 
 
 let currentquestion = 0;
