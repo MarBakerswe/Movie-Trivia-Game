@@ -21,6 +21,13 @@ body {
 
 }
 
+.flex-container {
+  display: flex;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+}
+
 .item1 { 
   /* flex:1 1 50%; */
   flex-grow:1;
@@ -96,6 +103,7 @@ h1{
   color: rgb(240, 163, 48);
   text-shadow: 2px 2px #040505;
   line-height: 2px;
+  text-align: center;
 }
 
 
@@ -142,6 +150,7 @@ p{
 font-family: 'Lato', sans-serif;
 font-size: 1rem;
 color: rgb(240, 240, 240);
+text-align: center;
 }
 
 .responsetext{
