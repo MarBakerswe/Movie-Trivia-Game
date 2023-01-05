@@ -123,6 +123,8 @@ function nextQuestion() {
     document.getElementById('riquestiontext').innerHTML = questions[currentquestion].question;
     //adding the iamge for each movie that correspondence to the current question
     document.getElementById('movieImg').innerHTML = `<img src="${questions[currentquestion].imgUrl}"/>`;
+	gsap.fromTo('.item1', {x: -200, opacity: 0}, {x: 0, opacity:1, duration: 1});
+	gsap.fromTo('.item2', {x: 200, opacity: 0}, {x: 0, opacity:1, duration: 1});
 
 }
 
@@ -164,3 +166,6 @@ function finalScore() {
 }
 
 finalScore()
+
+gsap.fromTo('.item1', {x: -200, opacity: 0}, {x: 0, opacity:1, duration: 1});
+gsap.fromTo('.item2', {x: 200, opacity: 0}, {x: 0, opacity:1, duration: 1});
