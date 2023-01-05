@@ -1,258 +1,245 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    background: url("../images/ezgif-1-eb76d42dba.png") no-repeat center center fixed; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-animation:mymove 5s linear infinite;
-    /* Safari and Chrome */
-    animation:mymove 10s linear infinite;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    display: block;
+  margin: 0px;
+  padding: 0px;
+  background: url("../images/ezgif-1-eb76d42dba.png") no-repeat center center fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation:mymove 5s linear infinite;
+  /* Safari and Chrome */
+  animation:mymove 40s linear infinite;
+  color: #fff;
+  align-content: center;
 }
 
 .container{
-    background-color: #1a1818a4;
-    padding: 50px;
-    margin-top: 0px;
-    align-items: center;
-    height: 100vh;
+  background-color: #1a1818a4;
+  padding: 50px;
+  margin-top: 0px;
+  align-items: center;
+  height: 100vh;
+
 }
 
+.flex-container {
+  display: flex;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+  margin-top: 25px;
+}
+
+.item1 { 
+  /* flex:1 1 50%; */
+  flex-grow:1;
+  flex-basis:50%;
+}
+    
+.item2 { 
+  /* flex:0 2 50%; */
+  flex-shrink:2;
+  flex-basis:50%;
+}
+
+
+/* Movie CONTAINER*/
+.movie-container {
+  border: dotted 0.1em rgb(221, 148, 37);
+  background-color: rgba(0, 0, 0, 0.774);  font-size: 20px;
+  font-weight: 300;
+  width: 750px;
+  padding: 20px;
+  margin: auto;
+  gap: 5px;
+} 
+
+/* Movie CONTAINER*/
+
 .currentscore{
-  flex-basis: 100%;
-  flex-grow: 1;
+font-size: 35px;
+font-family: 'Limelight', cursive;
+color: rgb(240, 163, 48);
+text-shadow: 2px 2px #040505;
+margin-bottom: 20px;
+margin: auto;
+text-align: center;
+
+}
+
+.questiontext{
+  font-size: 35px;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.riitem {
+padding: .75rem 1.25rem;
+margin: 1rem;
+border: 1px solid transparent;
+border-radius: .25rem;
+
+}
+
+
+img{
+  border: dotted 0.1em rgb(240, 163, 48);
+  background-color: #0c2b42;
+  padding: 1em;
+  font-family: 'Limelight', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  width: 250px;
+  margin-right: 25px;
+
+}
+
+.next-question{
+  margin-left: 50px;
+}
+
+h1{
   font-size: 35px;
   font-family: 'Limelight', cursive;
   color: rgb(240, 163, 48);
   text-shadow: 2px 2px #040505;
-  margin-bottom: 20px;
+  line-height: 2px;
+  text-align: center;
 }
 
-.riitem {
+
+
+
+.hide {
+  display: none;
+}
+
+#richeckfalse {
+  cursor: pointer;
+}
+
+#richecktrue {
+  cursor: pointer;
+}
+
+.correct {
   position: relative;
   padding: .75rem 1.25rem;
   margin: 1rem;
   border: 1px solid transparent;
   border-radius: .25rem;
-  color: #111;
-  background-color: #000000e3;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
- 
-}
-
-.gamebox{
-    border: dotted 0.1em rgb(221, 148, 37);
-    background: url(https://img.freepik.com/premium-photo/flat-lay-popcorn-red-background-with-copy-space_23-2148425049.jpg?w=2000) center center/cover no-repeat local;    padding: 1em;
-    font-size: 20px;
-    font-weight: 300;
-    width: 750px;
-    margin: auto;
-}
-
-img {
-    border: dotted 0.1em rgb(240, 163, 48);
-    background-color: #0c2b42;
-    padding: 1em;
-    font-family: 'Limelight', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    width: 200px;
-    margin-right: 25px;
-  
-  }
-
-
-.next-question{
-    margin-left: 50px;
-}
-
-h1{
-    font-size: 35px;
-    font-family: 'Limelight', cursive;
-    color: rgb(240, 163, 48);
-    text-shadow: 2px 2px #040505;
-    line-height: 2px;
-}
-
-.player-score{
-    flex-basis: 100%;
+  color: #155724;
+  background-color: #d4edda;
 
 }
 
-
-.hide {
-    display: none;
-}
-  
-#richeckfalse {
-    cursor: pointer;
-}
-  
-#richecktrue {
-    cursor: pointer;
-}
-  
-.correct {
-    position: relative;
-    padding: .75rem 1.25rem;
-    margin: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    color: #155724;
-    background-color: #d4edda;
-  
-}
-  
 .incorrect {
-    position: relative;
-    padding: .75rem 1.25rem;
-    margin: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    color: #721c24;
-    background-color: #f8d7da;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #721c24;
+  background-color: #f8d7da;
 
-}
-  
-.questiontext{
-    font-size: 35px;
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    flex-basis: 45%;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  
-
-}
-.movieImg{
-  flex-basis: 50%;
 }
 
 p{
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  color: rgb(240, 240, 240);
+font-family: 'Lato', sans-serif;
+font-size: 1rem;
+color: rgb(240, 240, 240);
+text-align: center;
 }
 
 .responsetext{
-  font-size: 15px;
-  color: rgb(0, 0, 0);
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+font-size: 15px;
+color: rgb(0, 0, 0);
+font-family: 'Lato', sans-serif;
+font-weight: 400;
 
 }
 
 .glow-on-hover {
-  width: 150px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
+width: 150px;
+height: 50px;
+border: none;
+outline: none;
+color: #fff;
+background: #111;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+}
+
+.hrcolor{
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  width: 500px;
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+content: '';
+background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+position: absolute;
+top: -2px;
+left:-2px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing 20s linear infinite;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+color: #000
 }
 
 .glow-on-hover:active:after {
-  background: transparent;
+background: transparent;
 }
 
 .glow-on-hover:hover:before {
-  opacity: 1;
+opacity: 1;
 }
 
 .glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgb(74, 126, 238);
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: normal;
-  align-content: normal;
-}
-
-.flex-items:nth-child(1) {
-  display: block;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-
-.flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgb(165, 13, 13);
+left: 0;
+top: 0;
+border-radius: 10px;
 }
 
 
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+0% { background-position: 0 0; }
+50% { background-position: 400% 0; }
+100% { background-position: 0 0; }
 }
 
 @-webkit-keyframes mymove {
-  from {
-      background-position: 0% 0%;
-  }
-  to {
-      background-position: 0% 100%;
-  }
+from {
+    background-position: 0% 0%;
+}
+to {
+    background-position: 0% 100%;
+}
 }
 @keyframes mymove {
-  from {
-      background-position: 0% 0%;
-  }
-  to {
-      background-position: 0% 100%;
-  }
+from {
+    background-position: 0% 0%;
+}
+to {
+    background-position: 0% 100%;
+}
 }
 
