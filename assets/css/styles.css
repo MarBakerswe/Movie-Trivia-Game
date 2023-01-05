@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-animation:mymove 5s linear infinite;
-  /* Safari and Chrome */
+  /* background speed */
   animation:mymove 40s linear infinite;
   color: #fff;
   align-content: center;
@@ -47,10 +47,11 @@ body {
   border: dotted 0.1em rgb(221, 148, 37);
   background-color: rgba(0, 0, 0, 0.774);  font-size: 20px;
   font-weight: 300;
-  width: 750px;
+  width: 800px;
   padding: 20px;
   margin: auto;
   gap: 5px;
+  margin-top: 50px;
 } 
 
 /* Movie CONTAINER*/
@@ -106,9 +107,6 @@ h1{
   line-height: 2px;
   text-align: center;
 }
-
-
-
 
 .hide {
   display: none;
@@ -218,14 +216,22 @@ top: 0;
 border-radius: 10px;
 }
 
-
-
+.resetbtt{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* keyframes for true and false buttons */
 @keyframes glowing {
 0% { background-position: 0 0; }
 50% { background-position: 400% 0; }
 100% { background-position: 0 0; }
 }
 
+/* animation for background image  */
 @-webkit-keyframes mymove {
 from {
     background-position: 0% 0%;
